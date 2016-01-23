@@ -23,6 +23,15 @@ function PartyTime() {
   }
 
   var _mouseParty = function() {
+    var mouse = document.createElement('h1');
+    mouse.style.position = 'absolute';
+    mouse.innerHTML = 'PARTY TIME';
+    document.body.appendChild(mouse);
+    console.log(mouse);
+    document.addEventListener('mousemove', function(event) {
+      mouse.style.left = event.pageX + 'px';
+      mouse.style.top = event.pageY + 'px';
+    });
   }
 
   var _soundParty = function() {
