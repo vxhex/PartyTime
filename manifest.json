@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+
+	"name": "PartyTime for the Internet",
+	"description": "This extension is ready to party and I hope you are too.",
+	"version": "0.1",
+  
+	"permissions": [
+		"<all_urls>"
+	],
+  
+        "content_scripts": [{
+                "matches": ["<all_urls>"],
+                "js": ["party.js"],
+                "run_at": "document_idle"
+        }],
+  
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "menu.html"
+	}
+}

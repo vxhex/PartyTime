@@ -1,0 +1,12 @@
+body {
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+	width: 300px;
+}
+
+.center {
+	width: 100%;
+	text-align:center;
+}
